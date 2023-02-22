@@ -1,0 +1,131 @@
+extraStrings:
+  - type: en-US
+    strings:
+      STR_CRITICAL_HIT_MESSAGE: "Critical hit!"
+extended:
+  tags:
+    BattleUnit:
+      CRITICAL_STATE: int
+      LAST_HIT_FRAME: int
+    RuleItem:
+      CRIT_CHANCE: int
+      CRIT_DAMAGE: int
+  scripts:
+    # Future Script for luck 
+    # 
+    # Script for Criticals
+    damageUnit:
+      - offset: -1 # critical hits (balancing for lower damageRange)
+        code: |
+          var ptr RuleItem item_rule;
+          var int weapon_chance;
+          var int unit_chance;
+          var int chance;
+          var int crit_factor;  # 100 = 100% additional damage of original power
+          var int crit_damage;
+          var int temp;
+          weapon_item.getRuleItem item_rule;
+
+          unit.getTag unit_chance Tag.CRITICAL_STATE;
+          item_rule.getTag weapon_chance Tag.CRIT_CHANCE;
+          item_rule.getTag crit_factor Tag.CRIT_DAMAGE;
+          add unit_chance weapon_chance;
+
+          if lt unit_chance 1;
+            set unit_chance 3;  # 3% for anything else weird
+          # Melee: 30% Aimed: 12%, Snap: 6% Auto: 1%
+          # use battle_action to get different actions Aim 9, auto 7, hit 10, snap 8
+            if eq battle_action 10;
+              set unit_chance 30;  # 30% for melee
+            else eq battle_action 9;
+              set unit_chance 12;  # 12% for aimed shots
+            else eq battle_action 8;
+              set unit_chance 6;  # 6% for snap shots
+            else eq battle_action 7;
+              set unit_chance 1;  # 2% for auto shots
+            end;
+          end;
+          
+          debug_log "CRITICAL PERCENT:" unit_chance;
+          debug_log "final damage:" currPower " - Original damage:" orig_power;
+          
+          if eq crit_factor 0;
+            set crit_factor 25; # 25% additional damage as baseline for everybody on crit
+            if eq battle_action 10;
+              set crit_factor 45;
+            else eq damaging_type 1;
+              set crit_factor 75;
+            end;
+          end;
+          
+          battle_game.randomChance unit_chance; # will set unit_chance to 1 on success
+          # No criticals on smoke or explosives
+          if and gt unit_chance 0 neq damaging_type 2;
+            if and neq damaging_type 9 neq damaging_type 3;
+            # Figure out how much armor is reducing damage and reduce that armor by 66%
+              set crit_damage orig_power;
+              muldiv crit_damage crit_factor 100;
+              add to_health crit_damage;
+              # Flash RED when crit hit
+              # NEED TO BUILD IN A CHECK TO SEE IF ITS WEAPON DAMAGE FFS
+              battle_game.flashMessage "STR_CRITICAL_HIT_MESSAGE";
+              battle_game.getAnimFrame temp;
+              unit.setTag Tag.LAST_HIT_FRAME temp;
+              debug_log "CRITICAL HIT:" currPower " Base Damage and " crit_damage " Bonus Damage!";
+            end;
+          end;
+          return;
+
+    recolorUnitSprite:
+      - offset: 10
+        code: |
+          var int temp;
+          
+          unit.getTag temp Tag.LAST_HIT_FRAME;
+          if neq temp 0;
+            sub temp anim_frame;
+            if gt temp -3; #only 3 frames after hit have changed color
+              set_color new_pixel 2; #red color
+            end;
+          end;
+          
+          return new_pixel;
+          
+
+    hitUnit:
+      - offset: -1 # power nerfer
+        code: |
+          var ptr RuleSoldier soldier_rule;
+          var int id;
+          var int firing;
+          var int adjustment;
+          
+          set adjustment 80; # 80% power
+
+          unit.getId id;
+          unit.getRuleSoldier soldier_rule;  
+
+          if neq soldier_rule null;  # we have an xcom unit
+            debug_log "Adjusting power of hit against xcom unit" id;
+            debug_log " - from" power;
+            muldiv power adjustment 100;
+            debug_log " - to" power;
+          end;
+          return power part side;
+
+    returnFromMissionUnit:
+      - offset: -2 # Changing injured time to less than 13
+        code: |
+          var int currentRecoveryDays 0;
+          var int maxRecoveryDays 13;
+          var int newRecoveryDays 0;
+          debug_log "Original Recovery Time:" recovery_time;
+          set currentRecoveryDays recovery_time;
+          div currentRecoveryDays 5;
+          debug_log "Changed Recovery Time:" currentRecoveryDays;
+          if gt currentRecoveryDays 13;
+            debug_log "Changed MAX Days Recovery from" currentRecoveryDays;
+            set currentRecoveryDays 13;
+          end;
+          set recovery_time currentRecoveryDays;
+          return;

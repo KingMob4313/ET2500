@@ -1,0 +1,65 @@
+# Equal Terms: Wolfram Lance - Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
+# version 2.000b030 for OpenXcom
+# This contains just the trade goods for Wolfram Lance
+items:
+  - type: STR_SUPER_ALLOYS_TRADE_GOOD
+    listOrder: 900
+    size: 1.0
+    costSell: 10000
+  - type: STR_NITROCUBANE_TRADE_GOOD
+    listOrder: 900
+    size: 0.5
+    costSell: 20000
+manufacture:
+  - name: STR_SUPER_ALLOYS_TRADE_GOOD
+    category: STR_TRADE_GOODS
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 10
+    time: 100
+    cost: 2000
+  - name: STR_NITROCUBANE_TRADE_GOOD
+    category: STR_TRADE_GOODS
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    space: 10
+    time: 250
+    cost: 1000
+ufopaedia:
+  - id: STR_SUPER_ALLOYS_TRADE_GOOD
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: SUPER_ALLOYS
+    text_width: 190
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_SUPER_ALLOYS_TRADE_GOOD_UFOPEDIA
+  - id: STR_NITROCUBANE_TRADE_GOOD
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: NITROCUBANE
+    text_width: 190
+    requires:
+      - STR_ALLOY_MANUFACTURING
+    text: STR_NITROCUBANE_TRADE_GOOD_UFOPEDIA
+extraStrings:
+  - type: en-US
+    strings:
+      STR_SUPER_ALLOYS_TRADE_GOOD: Super Alloys
+      STR_SUPER_ALLOYS_TRADE_GOOD_UFOPEDIA: Leveraging the processes used to produce alien alloys, complex molecular layered alloys can be produced in precisely tailored configurations for use in varied appliations such as vehicular armor, aerospace frames, exotic configured elements and superconductive components for private and government experiments and prototyping.
+      STR_NITROCUBANE_TRADE_GOOD: Nitrocubane Explosives
+      STR_NITROCUBANE_TRADE_GOOD_UFOPEDIA: Using the new manufacturing process to create the alien alloys, precision controlled chemical synthesis can be used to create novel explosive compounds.  One high value application is offering up kilograms of octanitrocubane and other rare nitrocubanes to allied governments and private industry.
+      STR_TRADE_GOODS: Trade Goods
+extraSprites:
+  - type: SUPER_ALLOYS
+    singleImage: true
+    width: 200
+    height: 200
+    files:
+      0: Resources/WolframLance/TradeGoods/superalloys.png
+  - type: NITROCUBANE
+    singleImage: true
+    width: 200
+    height: 200
+    files:
+      0: Resources/WolframLance/TradeGoods/octanitrocubane.png

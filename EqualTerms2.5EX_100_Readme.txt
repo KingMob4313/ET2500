@@ -1,0 +1,70 @@
+--= 313 Equal Terms 2.0 Modification for Open-X-Com Extended =--
+By KingMob4313 and Ickschuss. Created for X-Com: Ufo Defense May 2000.
+Last updated March 2020.
+
+BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA Version 2.5.100 BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
+
+
+Installation: 
+Please See the 'ET_EX_Install.pdf' file for detailed install instructions.
+
+-- Other mods I like added --
+Improved Living Quarters & Large Stores - https://openxcom.mod.io/improved-living-quarters-large-stores
+UFO Vanilla Variants - https://openxcom.mod.io/ufo-vanilla-variants
+Terrain Pack - https://openxcom.mod.io/terrain-pack (NOTE: TO USE THIS MOD, YOU WILL NEED TO MOVE THE COMPATIBILITY FILE INTO THE RULESET FOLDER)
+
+The mod has three portions:
+
+-= Wolfram Lance =-
+The gunpowder tier weapons lack damage potential compared to later weapon technologies, but still have the highest cyclic rates in the game: firing more rounds per time-unit than other weapon classes. 
+
+-= Coherency =- 
+Laser weapons, while more potent and much more accurate in autofire modes than gunpowder weapons, are inferior in aimed accuracy to other weapon classes and lack the lethality of plasma weapons.
+
+-= Fourth State =- 
+Plasma weapons inflict incomparable damage, while lacking some of the accuracy or rate of fire compared to the other weapon types.
+
+Overall, weapons have a certain amount of utility throughout the game, while still making upgrading technology levels worthwhile.  Because of this, researching the weapon technology trees now takes longer, to afford more utility to the earlier tiers.
+
+The tier-list
+0: Gunpower
+0.5: Alloy
+1: Laser
+2: Plasma
+3: In next DLC
+
+Version 2.5EX.100
+--== Current ==--
+First version for OpenXcom Extended
+All weapons rebalanced, adding different capabilities vs armor, damage drop, accuracy calculations and minor damage adjustments
+All weapons have modified reload times to account for weapon type
+Adjusted SAW ammo box to 50 rounds to 100 and added 50 round casket magazine for tier 0 & 0.5
+Added Shotgun slugs for tier 0 & 0.5
+Added Stun Baton round for MGL
+Added Melee weapons at suggestion of stream viewers
+
+Fixed Light/Small Rocket to be general purpose (design confusion)
+
+Version 2.0.045 (Bug fixes - continuous roll up versions)
+--== Current ==--
+Moved out Hyperwave Encoder/Decoder compatibility code for the Terrain Pack mod from misc file to optional file
+Corrected typo in Improved Grenade floor object
+Fixed miss attributed grenade floor object.
+Corrected bad merge of retaliator craft images
+Fixed light rocket / small rocket ufopedia issue
+Corrected issues with plasma HWP research
+Corrected missing corpse types with power armor
+Fixed missing ufopedia issues
+Adjusted some sounds
+
+Version 2.0.040 (Final)
+Added new Recon Craft that replaces recon ability of Skyranger
+  Adjusted radar capability of other aircraft to emphasize use of the new craft
+  Reduced cost of Skyranger now that it is nearly incapable of finding alien bases now
+Added new Trade Goods for tier 0.5, 1, 2
+Flipped BigOb for SMG tier to provide visual cues that it is a one handed weapon
+(Re)-Set up map file reference UBASEREDUX_00 to have HYPER WAVE ENCODER/DECODER
+Fixed HWP Issues - Thanks SupSuper, ohartenstein23 and Meridian for the help.
+Improved HWP GMG sound

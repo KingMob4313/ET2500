@@ -1,0 +1,175 @@
+New Additions:
+
+=== TO FIX ===
+Change sound on stun grenades to melee hammer hit
+Small launcher should not be available ???
+Blaster Launcher should not be available ???
+Check alloy aerospace weapons for proper damage (150%)
+WRONG IMAGE ON ALIEN GRENADE LAUNCHER
+Fix Laser Combat Shotgun and Ammo Listorder
+FIX POWER RANGE THRESHOLDS FOR ALL WEAPONS INCLUDING LASER AND PLASMA - NOT ON AMMO - ON THE WEAPON [WL - D, C - P, P - P]
+Recheck HWD location
+Fix melee weapon hits for objects
+
+
+== OMG TANK SHIT == 
+THE PLASMA TANKS ARE A FUCKING MESS
+FIX PLASMA ROCKETS to need alien grenade research + alloy manufacturing 
+HWP FUSION ROCKET [1] Shows as an item
+TANK LIGHT IMPROVED ROCKET - WRONG BULLET SPRITE
+TANK LIGHT IMPROVED ROCKET - WRONG TANK TURRET SPRITE
+TANK HEAVY IMPROVED ROCKET - WRONG TANK TURRET SPRITE
+TANK LASER GMG - WRONG
+TANK LASER CANNON wrong Image on Grenade use item battlescape
+TANK FUSION ROCKET Battlescape has no body
+TANK FUSION ROCKET Battlescape wrong icon for both?
+TANK PLASMA GMG Battlescape has no body 
+TANK PLASMA GMG Battlescape Hand ICONS are switched 
+TANK PLASMA GMG Battlescape wrong icon for grenade uses blaster bomb? 
+TANK PLASMA CANNON Battlescape has no body 
+TANK PLASMA CANNON Hand ICONS are switched
+TANK PLASMA CANNON Wrong grenade icon battlescape
+
+
+--== Future Plans ==--
+Make ammo pack for Anti Tank laser that can't actually be reloaded in combat 
+Laser = Vibro Melee weapons
+Plasma = Plasma Melee weapons
+Build critical into hitUnit instead.
+Script for luck calculation
+Script to have weapons get shot out of hands
+Script to have weapons do autofire reaction shots
+
+
+
+== GENERAL GAME CRASHING BUGS ==
+
+0. Exploding map ties WTF? Arctic
+    - BLANKS
+    - TUNDRAPLANE
+    - CRASHEDPLANE
+    - BLANKS
+    - U_EXT02
+    - U_WALL02
+    - U_DISEC2
+    - U_BITS
+    - BLANKS
+    - PLANE
+
+
+Laser Combat Shotgun Spread Module: No UFOPEDIA entry [DONE]
+Laser Combat Shotgun Beam Module: No UFOPEDIA entry [DONE]
+Plasma Assault Rifle: Fix UFOPEDIA typo "expanded -TO- cover" [DONE]
+Change laser combat shotgun 'reload' sound. [DONE]
+Check laser research and manu costs [Fixed]
+CAN'T EQUIP PLASMA ROUNDS FOR MGL (ROCKET LAUNCHER?) [FIXED]
+Plasma Shotties [Fixed]
+Fix Laser Shotgun Spread Damage!!@! [FIXED]
+Add High End to Machine Gun Tank Sound [FIXED]
+Plasma DMR "capabilities" x2 in the desc [Fixed]
+Manu plasma rifle "exacty" and "exactly" used TWICE [FIXED]
+Redo armor numbers HOLY SHIT [FIXED]
+Refix Critical hit script [FIXED]
+STR_REMAN_SMALL_LAUNCHER - Missing UFO Pedia [FIXED]
+Change PlasmA Magnum "Clip" to "Mag" [FIXED]
+Nerf Laser Cannon Shots to 25 ammo [FIXED]
+1. Avalanche Missiles and BGL Tank ammo shows as ammo of Engineers (LOOOOOOL)
+1. Script to keep wounds less than 10 days [FIXED]
+1. Check laser LMG production Time [Fixed]
+Fix Laser Shotguns (BOTH) 8 beams not 12 [FIXED]
+CHANGE ALLOY WEAPON DAMAGE [FIXED]
+CHECK MGL range and drop off [FIXED]
+Nerf incendiary damage [Done]
+Change alloy ammo damage / armor penetration - improve from 120% damage and +20% penetration to 130% damage and +30% penetration. [DONE]
+NERF MGL: Longer reload! less snap shots? [FIXED]
+LASER SHOTGU AND AUTO SHOTGUN [DONE]
+Fix all weapons accuracy values with new ones [DONE!]
+Fix Shotguns accuracy and choke [FIXED]
+Switch listorder location for MAGNUM ammo SELL ORDER? [FIXED]
+Alloy SAW Ammo Mag missing from manufacturing [Fixed]
+Where are alloy shotgun shells [FIXED]
+ALLOY combat shotgun ammo named wrong "Alloy {Weapon_Name} {Ammo_Type}" [FIXED]
+AUTOSHOTTY HANDOB IS STILL FUCKED [DONE]
+GET TRANSFORMATIONS in the game [DONE]
+SORT PEOPLE BY THEIR GEAR! [DONE]
+ADD CATASTROPHE BLACK [FIXED]
+FIX SHONNY's DAYS OUT [FIXED]
+GET MUSIC WORKING [FIXED]
+FIX ALL ACCURACIES FFS [FIXED]
+Explosive need more stats to keep everything from burning!!! [FIXED]
+8. RECHECK FIX POWER ARMOR PENALTIES[FIXED]
+9. NANOSCALE TRADE GOOD no image [FIXED]
+6. CHANGE EXISTING SHOTGUN TO SHORT SEMI [FIXED]
+7. CHANGE SLUG so that it has better range [FIXED]
+2. Change 40mm Alien Grenade to 
+  a. 40mm = MGL [FIXED]
+  b. Set them to need alien grenade research + alloy manufacturing [FIXED]
+1. Shotgun and Combat Shotgun ammo is stacked up weird, temp fix item listorder [FIXED]
+0. 40mm Alien Grenade x32 shows in soldier equip as item [FIXED]
+1. HIT SOUND OMG [DONE]
+2. Manufacturing for alloy melee is missing [DONE]
+3. FIX LASER SHOT SPEED LOL WTF [Done]
+4. AUX_HWP_ALIEN_GLUANCHER needs a name for the ammo - set it like the name for the WL stuff [DONE]
+4a. MAIN AMMO IS BUILT AT BEFORE - Increase cost and size since it includes both ammos [DONE]
+4b. SECONDARY AMMO DOESN'T EXIST - WEAPON COMES WITH AMMO [DONE]
+5. BASE SMALL LAUNCHER CAN BE USED LOL [Fixed]
+3. CAN SEE EQUIP SCREEN FOR TANK (TURN OFF) [FIXED]
+0. WTF is the alloy shovel?! [FIXED]
+0. HANDOB Stiletto WTF? [FIXED]
+0. CAN'T RESEARCH ALIEN WEAPONS WTF [FIXED IN BOTH]
+0. Add new melee weapons. Knife, Machete, Baseball Bat, Shovel/Axe [DONE]
+0. Dying in heavy armor goes into missing resource -- MISSING FLOOR AND BIG OBS IMAGE [FIXED IN BOTH]
+0. Manufacturing a Retaliator and clicking base, goes into missing resource. [FIXED IN BOTH]
+6. Adjust Sniper to be 3x2 [DONE]
+0a /Resources/Coherency/Retaliator [FIXED IN BOTH] --  
+0b FFS fix Sprite, +11, +33 [FIXED IN BOTH]
+0. RECHECK ALL TU FLAT COSTS! WAY TOO HIGH (55 * percentage/100) [FIXED]
+0. FIX SHOTGUN UFOPEDIA CONFUSION [FIXED]
+0. FIX COMBAT SHOTGUN UFOPEDIA CONFUSION [FIXED]
+0. Add new elerium rockets, item, manu, ufopedia and strings (i,m,u,s) [FIXED]
+0. Add new elerium 40mm incendiary grenade, item, manu, ufopedia and strings (i,m,u,s) [FIXED]
+0. INCREASE WEIGHT OF SAW TO 6 [Fixed, was only faux]
+0. STR_HUMAN_SMALL_LAUNCHER UFOPEDIA [FIXED]
+0. HWP Heavy Imp Rocket x8 can be bought WTF? - Needs Alloy Manufacturing and the tank that matches it [FIXED]
+0. HWP 40mm Imp Grenade x32 can be bought WTF?- Needs Alloy Manufacturing and the tank that matches it [FIXED]
+0. HWP Light Improved Rocket x 16 can be bought WTF?- Needs Alloy Manufacturing and the tank that matches it [FIXED]
+
+
+==Craft Stuff==
+Radar Range for Retaliator is too far [Fixed]
+
+
+==Weapon Shit==
+ADD COMBAT SHOTGUN [FIXED]
+FIX SHOTGUN PELLET DAMAGE - TOO HIGH [Fixed]
+Shotgun imp slugs aren't showing for manufacturing [Fixed]
+Remove all weapon based stat penalties ESPECIALLY rocket launcher [Imaginary, fixed]
+SAW AMMO BOX Graphic too far left - CAN'T BE 1x3 [FIXED - NOW 1x3]
+Change MGL reload sound to 3 reload sounds [FIXED]
+Need MEATIER sniper rifle reload sound [FIXED]
+Add bottom end to DMR fire sound   [FIXED]
+
+
+==Name and UFOPEDIA SHIT==
+Shotgun isn't showing ammo in main listing [FIXED]
+Saw isn't showing ammo in main listing [FIXED]
+STR_MGL - Name not appearing [FIXED]
+STR_SHOTGUN - Name not appearing [FIXED]
+STR_SAW_AP_CLIP  [FIXED]
+STR_SAW_AP_CLIP_UFOPEDIA  [FIXED]
+STR_IMP_SAW_AP_CLIP  [FIXED]
+STR_IMP_SAW_AP_CLIP_UFOPEDIA  [FIXED]
+TRADE GOODS CATEGORY NAME [FIXED IN BOTH]
+STR_MGL - Explain in UFOPEDIA why you hear three reload sounds [FIXED]
+Fix Alloy Rockets to "Enhanced" like other rockets [FIXED]
+Fix Alloy MGL Grenades to "Enhanced" like other MGL Grenades [FIXED]
+
+
+
+==List order shit==
+JESUS CHRIST SORT OUT ARMOR LISTORDERS
+HEAVY ARMOR REPAIR needs to be right after heavy Armor in production
+HWP Rockets and HWP light rockets need to be right after HWP 40mm Imp Grenade x32 in production
+Shotgun slugs & shot need to be higher up in buy 
+Alloy Shotgun slugs & shot need to be higher up in manufacturing
+Shotgun and SAW stuff is out of order in UFOPEDIA

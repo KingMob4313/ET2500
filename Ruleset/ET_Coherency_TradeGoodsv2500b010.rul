@@ -1,0 +1,40 @@
+# Equal Terms: Coherency - Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
+# version 2.500b010 for OpenXcom
+# This contains just the trade goods for Coherency
+items:
+  - type: STR_NANOSCALE_BATTERIES_TRADE_GOOD
+    listOrder: 900
+    size: 1.0
+    costSell: 32500
+manufacture:
+  - name: STR_NANOSCALE_BATTERIES_TRADE_GOOD
+    category: STR_TRADE_GOODS
+    requires:
+      - STR_ALLOY_MANUFACTURING
+      - STR_LASER_WEAPONS
+    space: 10
+    time: 200
+    cost: 10000
+ufopaedia:
+  - id: STR_NANOSCALE_BATTERIES_TRADE_GOOD
+    type_id: 7
+    section: STR_ALIEN_RESEARCH_UC
+    image_id: NANOSCALE_BATTERIES
+    text_width: 190
+    requires:
+      - STR_ALLOY_MANUFACTURING
+      - STR_LASER_WEAPONS
+    text: STR_NANOSCALE_BATTERIES_TRADE_GOOD_UFOPEDIA
+extraStrings:
+  - type: en-US
+    strings:
+      STR_NANOSCALE_BATTERIES_TRADE_GOOD: Nanoscale Batteries
+      STR_NANOSCALE_BATTERIES_TRADE_GOOD_UFOPEDIA: Combining alien alloys manufacturing technology and the underlying theoretical basis for power cells for the program's laser weapons, commerical atomic scale solid state batteries can now be contructed.  With a power to weight ratio more than 5 times that of previous technologies, these cells could revolutionize every aspect of civilian life. 
+      STR_TRADE_GOODS: Trade Goods
+extraSprites:
+  - type: NANOSCALE_BATTERIES
+    singleImage: true
+    width: 200
+    height: 200
+    files:
+      0: Resources/Coherency/TradeGoods/nanobatteries.png

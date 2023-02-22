@@ -1,0 +1,10 @@
+# This rul file is just for those who use the Terrain mod which changes the alien base.
+terrains:
+#       This is for the terrain pack
+      - name: UBASEREDUX_00
+        width: 20
+        length: 20
+        groups: 3
+        items: # This adds the new Hyper Wave Encoder needed for the end game
+          STR_HYPER_WAVE_ENCODER:
+            - [9, 11, 2]

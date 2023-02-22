@@ -1,0 +1,95 @@
+extraStrings:
+  - type: en-US
+    strings:
+      STR_CRITICAL_HIT_MESSAGE: "Critical hit!"
+extended:
+  tags:
+    BattleUnit:
+      CRITICAL_STATE: int
+      LAST_HIT_FRAME: int
+    RuleItem:
+      CRIT_CHANCE: int
+      CRIT_DAMAGE: int
+  scripts:
+    # Future Script for luck 
+    # 
+    # Script for Criticals
+    damageUnit:
+      - offset: -1 # critical hits (balancing for lower damageRange)
+        code: |
+          var ptr RuleItem item_rule;
+          var int weapon_chance;
+          var int unit_chance;
+          var int chance;
+          var int crit_factor;  # 100 = 100% additional damage of original power
+          var int crit_damage;
+          var int temp;
+          var int current_damage;
+          weapon_item.getRuleItem item_rule;
+
+          unit.getTag unit_chance Tag.CRITICAL_STATE;
+          item_rule.getTag weapon_chance Tag.CRIT_CHANCE;
+          item_rule.getTag crit_factor Tag.CRIT_DAMAGE;
+
+          add unit_chance weapon_chance;
+
+          if eq unit_chance 0;
+            set unit_chance 5;  # base chance of 5% for everybody
+          end;
+
+          if eq crit_factor 0;
+            set crit_factor 100; # 100% additional damage as baseline for everybody on crit
+          end;
+
+          battle_game.randomChance unit_chance; # will set unit_chance to 1 on success
+          if and gt unit_chance 0 neq damaging_type 9;
+            if lt orig_power currPower;
+              debug_log "Original Damage:" orig_power;
+              debug_log "Current Power?:" currPower;
+              set current_damage currPower;
+            else;
+              set current_damage orig_power;
+            end;
+            set crit_damage orig_power;
+            muldiv crit_damage crit_factor 50;
+            add to_health crit_damage;
+            # Flash RED when crit hit
+            # NEED TO BUILD IN A CHECK TO SEE IF ITS WEAPON DAMAGE FFS
+            battle_game.flashMessage "STR_CRITICAL_HIT_MESSAGE";
+            battle_game.getAnimFrame temp;
+            unit.setTag Tag.LAST_HIT_FRAME temp;
+            debug_log "CRITICAL HIT:" crit_damage;
+          end;
+          return;
+
+    recolorUnitSprite:
+      - offset: 10
+        code: |
+          var int temp;
+          
+          unit.getTag temp Tag.LAST_HIT_FRAME;
+          if neq temp 0;
+            sub temp anim_frame;
+            if gt temp -3; #only 3 frames after hit have changed color
+              set_color new_pixel 2; #red color
+            end;
+          end;
+          
+          return new_pixel;
+
+    returnFromMissionUnit:
+      - offset: -2 # Changing injured time to less than 13
+        code: |
+          var int currentRecoveryDays 0;
+          var int maxRecoveryDays 13;
+          var int newRecoveryDays 0;
+          debug_log "Original Recovery Time:" recovery_time;
+          set currentRecoveryDays recovery_time;
+          div currentRecoveryDays 5;
+          debug_log "Changed Recovery Time:" currentRecoveryDays;
+          if gt currentRecoveryDays 13;
+            debug_log "Changed MAX Days Recovery from" currentRecoveryDays;
+            set currentRecoveryDays 13;
+          end;
+          set recovery_time currentRecoveryDays;
+          return;

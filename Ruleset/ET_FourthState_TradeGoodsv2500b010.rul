@@ -1,0 +1,31 @@
+# Equal Terms: Fourth State - Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
+# version 2.500b010 for OpenXcom
+# This contains just the trade goods for Fourth State
+items:
+  - type: STR_CAPACITOR_CELLS_TRADE_GOOD
+    listOrder: 900
+    size: 1.0
+    costSell: 72500
+manufacture:
+  - name: STR_CAPACITOR_CELLS_TRADE_GOOD
+    category: STR_TRADE_GOODS
+    requires:
+      - STR_ALLOY_MANUFACTURING
+      - STR_ALIEN_WEAPONS
+    space: 10
+    time: 300
+    cost: 12500
+ufopaedia:
+  - id: STR_CAPACITOR_CELLS_TRADE_GOOD
+    type_id: 8
+    section: STR_ALIEN_RESEARCH_UC
+    requires:
+      - STR_ALLOY_MANUFACTURING
+      - STR_ALIEN_WEAPONS
+    text: STR_CAPACITOR_CELLS_TRADE_GOOD_UFOPEDIA
+extraStrings:
+  - type: en-US
+    strings:
+      STR_CAPACITOR_CELLS_TRADE_GOOD: Capacitor Cells
+      STR_CAPACITOR_CELLS_TRADE_GOOD_UFOPEDIA: Further refinement of the nanoscale battery technology combined with recent discoveries in how the aliens produce ammunition packs for their plasma weaponry, newer solid state nano capitors can be produced for commericial sale, providing power densities more than 20 times current commericial lithium ion battery technology.
+      STR_TRADE_GOODS: Trade Goods

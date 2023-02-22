@@ -1,0 +1,627 @@
+﻿ # Equal Terms Wolfram Lance Tanks - Version 2.500b010 for OpenXcom Extended
+ # Note: Conceit now behind ammo and aux weapons is that the ammo for both is contained in the one purchasable.
+items:
+  - type: STR_TANK_AGLAUNCHER
+    size: 6
+    costBuy: 420000
+    costSell: 320000
+    transferTime: 96
+    weight: 1
+    bigSprite: 702
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 9
+    fireSound: 721
+    compatibleAmmo:
+      - STR_HWP_AGLAUNCHER
+    autoShots: 3
+    accuracyAuto: 40
+    tuAuto: 40
+    accuracySnap: 57
+    tuSnap: 40
+    accuracyAimed: 100
+    tuAimed: 60
+    maxRange: 200
+    aimRange: 100
+    snapRange: 35
+    autoRange: 25
+    minRange: 8
+    dropoff: 2
+    clipSize: 48
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 1
+    arcingShot: true
+    bulletSpeed: -1
+    listOrder: 1120
+  - type: STR_TANK_HROCKET
+    size: 6
+    costBuy: 420000
+    costSell: 320000
+    transferTime: 96
+    weight: 1
+    bigSprite: 704
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52 # GOOD EXISTING SOUND
+    compatibleAmmo:
+      - STR_HWP_HROCKET
+    accuracySnap: 55
+    tuSnap: 40
+    accuracyAimed: 110
+    tuAimed: 75
+    maxRange: 200
+    aimRange: 125
+    snapRange: 25
+    minRange: 10
+    dropoff: 1
+    clipSize: 8
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 1
+    listOrder: 1350
+  - type: STR_TANK_LROCKET
+    size: 6
+    costBuy: 420000
+    costSell: 320000
+    transferTime: 96
+    weight: 1
+    bigSprite: 706
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 0
+    fireSound: 52 # GOOD EXISTING SOUND
+    compatibleAmmo:
+      - STR_HWP_LROCKET
+    accuracySnap: 55
+    tuSnap: 39
+    accuracyAimed: 115
+    tuAimed: 75
+    maxRange: 200
+    aimRange: 100
+    snapRange: 25
+    minRange: 8
+    dropoff: 2
+    battleType: 1
+    clipSize: 16
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 1
+    listOrder: 1310
+  - type: STR_TANK_GMG
+    size: 6
+    costBuy: 420000
+    costSell: 320000
+    transferTime: 96
+    weight: 1
+    bigSprite: 708
+    floorSprite: 0
+    handSprite: 0
+    bulletSprite: 2
+    fireSound: 720
+    compatibleAmmo:
+      - STR_HWP_GMG
+    autoShots: 5
+    accuracySnap: 62
+    tuSnap: 37
+    accuracyAuto: 42
+    tuAuto: 40
+    maxRange: 200
+    autoRange: 35
+    snapRange: 22
+    minRange: 5
+    dropoff: 1
+    clipSize: 200
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+    turretType: 0
+    listOrder: 1110
+# AUX Weapons
+  - type: AUX_TANK_SMG
+    weight: 1
+    bigSprite: 712
+    bulletSprite: 1
+    fireSound: 723
+    hitSound: 22
+# Using built in numbers 
+    damageType: 1
+    clipSize: 250
+    autoShots: 6
+    hitAnimation: 26
+    accuracyAuto: 50
+    tuAuto: 38
+    accuracySnap: 65
+    tuSnap: 35
+    maxRange: 150
+    snapRange: 25
+    autoRange: 30
+    minRange: 3
+    clipSize: 250
+    battleType: 1
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+  - type: AUX_TANK_LMG
+    weight: 1
+    bigSprite: 710
+    bulletSprite: 2
+    fireSound: 722
+# Using built in numbers 
+    damageType: 1
+    clipSize: 250
+    autoShots: 7
+    hitAnimation: 26
+    accuracyAuto: 45
+    tuAuto: 40
+    accuracySnap: 60
+    tuSnap: 37
+    maxRange: 175
+    snapRange: 25
+    autoRange: 40
+    minRange: 4
+    battleType: 1
+    clipSize: 250
+    fixedWeapon: true
+    invWidth: 2
+    invHeight: 3
+  - type: AUX_TANK_GLAUNCHER
+    weight: 1
+    bigSprite: 700
+    bulletSprite: 9
+    fireSound: 721
+# Using built in numbers 
+    damageType: 3
+    clipSize: 32
+    hitSound: 0
+    hitAnimation: 0
+    blastRadius: 3
+    power: 55
+    accuracySnap: 60
+    tuSnap: 39
+    accuracyAimed: 110
+    tuAimed: 60
+    maxRange: 200
+    aimRange: 100
+    snapRange: 35
+    minRange: 7
+    clipSize: 32
+    battleType: 1
+    fixedWeapon: true
+    arcingShot: true
+    bulletSpeed: -1
+    invWidth: 2
+    invHeight: 3
+# Tank Weapons Ammo
+  - type: STR_HWP_HROCKET
+    size: 1.2
+    costBuy: 4750
+    costSell: 3000
+    transferTime: 24
+    weight: 1
+    #bigSprite: 705
+    bigSprite: -1
+    floorSprite: 0
+    handSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 100
+    damageType: 3
+    clipSize: 8
+    battleType: 2
+    # New Ammo Stats START
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1
+      ToArmorPre: 0.0
+      ToArmor: 0.15
+    # New Ammo Stats END
+    #invWidth: 2
+    #invHeight: 3
+    listOrder: 1351
+  - type: STR_HWP_AGLAUNCHER
+    size: 0.8
+    costBuy: 5250
+    costSell: 3200
+    transferTime: 24
+    weight: 1
+    #bigSprite: 703
+    bigSprite: -1
+    floorSprite: 0
+    handSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 55
+    damageType: 3
+    clipSize: 48
+    battleType: 2
+    blastRadius: 3
+    # New Ammo Stats START
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1
+      ToArmorPre: 0.0
+      ToArmor: 0.10
+      ToStun: 0.20
+    # New Ammo Stats END
+    #invWidth: 2
+    #invHeight: 3 
+    listOrder: 1121
+  - type: STR_HWP_GMG
+    size: 0.600
+    costBuy: 3000
+    costSell: 2000
+    transferTime: 24
+    hitSound: 22
+    hitAnimation: 26
+    weight: 1
+    #bigSprite: 709
+    bigSprite: -1
+    floorSprite: 0
+    handSprite: 0
+    power: 42
+    damageType: 1
+    clipSize: 200
+    battleType: 2
+    #invWidth: 2
+    #invHeight: 1
+    # New Ammo Stats START
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 0.825
+      ToArmorPre: 0.0
+      ToArmor: 0.10
+      ToStun: 0.20
+    # New Ammo Stats END
+    listOrder: 1111
+  - type: STR_HWP_LROCKET
+    size: 1.2
+    costBuy: 8000
+    costSell: 5000
+    transferTime: 24
+    weight: 1
+    #bigSprite: 707
+    bigSprite: -1
+    floorSprite: 0
+    handSprite: 0
+    hitSound: 0
+    hitAnimation: 0
+    power: 75
+    damageType: 3
+    clipSize: 16
+    battleType: 2
+    #invWidth: 2
+    #invHeight: 3
+    # New Ammo Stats START
+    damageAlter:
+      RandomType: 2
+      ArmorEffectiveness: 1
+      ToArmorPre: 0.0
+      ToArmor: 0.15
+    # New Ammo Stats END
+    listOrder: 1311
+# disabled basic tanks & ammo
+  - type: STR_TANK_CANNON
+    costBuy: 0
+    requires:
+      - STR_ALIENS_ONLY
+  - type: STR_HWP_CANNON_SHELLS
+    costBuy: 0
+    requires:
+      - STR_ALIENS_ONLY
+  - type: STR_TANK_ROCKET_LAUNCHER
+    costBuy: 0
+    requires:
+      - STR_ALIENS_ONLY
+    turretType: 1
+  - type: STR_HWP_ROCKETS
+    costBuy: 0
+    requires:
+      - STR_ALIENS_ONLY
+armors:
+  - type: TANK_ARMOR_AGLAUNCHER
+    spriteSheet: TANKS.PCK
+    loftempsSet: [ 92, 89, 90, 91 ]
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 20
+    drawingRoutine: 2
+    damageModifier:
+      - 0.45
+      - 0.45
+      - 0.15
+      - 0.18
+      - 0.50
+      - 0.45
+      - 0.0
+      - 0.3
+      - 0.5
+      - 0.0
+    size: 2
+    builtInWeapons:
+      - STR_TANK_AGLAUNCHER
+      - AUX_TANK_SMG
+      # - AUX_HWP_SMG
+    allowInv: false
+  - type: TANK_ARMOR_GMG
+    spriteSheet: TANKS.PCK
+    loftempsSet: [ 92, 89, 90, 91 ]
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 20
+    drawingRoutine: 2
+    damageModifier:
+      - 0.45
+      - 0.45
+      - 0.15
+      - 0.18
+      - 0.50
+      - 0.45
+      - 0.0
+      - 0.3
+      - 0.5
+      - 0.0
+    size: 2
+    builtInWeapons:
+      - STR_TANK_GMG
+      - AUX_TANK_GLAUNCHER
+      # - AUX_HWP_GLAUNCHER
+    allowInv: false
+  - type: TANK_ARMOR_HROCKET
+    spriteSheet: TANKS.PCK
+    loftempsSet: [ 92, 89, 90, 91 ]
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 20
+    drawingRoutine: 2
+    damageModifier:
+      - 0.45
+      - 0.45
+      - 0.15
+      - 0.18
+      - 0.50
+      - 0.45
+      - 0.0
+      - 0.3
+      - 0.5
+      - 0.0
+    size: 2
+    builtInWeapons:
+      - STR_TANK_HROCKET
+      - AUX_TANK_SMG
+      # - AUX_HWP_SMG
+    allowInv: false
+  - type: TANK_ARMOR_LROCKET
+    spriteSheet: TANKS.PCK
+    loftempsSet: [ 92, 89, 90, 91 ]
+    corpseBattle:
+      - TANK_CORPSE_1
+      - TANK_CORPSE_2
+      - TANK_CORPSE_3
+      - TANK_CORPSE_4
+    frontArmor: 35
+    sideArmor: 30
+    rearArmor: 25
+    underArmor: 20
+    drawingRoutine: 2
+    damageModifier:
+      - 0.45
+      - 0.45
+      - 0.15
+      - 0.18
+      - 0.50
+      - 0.45
+      - 0.0
+      - 0.3
+      - 0.5
+      - 0.0
+    size: 2
+    builtInWeapons:
+      - STR_TANK_LROCKET
+      - AUX_TANK_LMG
+      # - AUX_HWP_LMG
+    allowInv: false
+units:
+  - type: STR_TANK_AGLAUNCHER
+    race: STR_TANK_AGLAUNCHER
+    stats:
+      tu: 70
+      stamina: 100
+      health: 100
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ARMOR_AGLAUNCHER
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    allowInv: false
+  - type: STR_TANK_GMG
+    race: STR_TANK_GMG
+    stats:
+      tu: 70
+      stamina: 100
+      health: 100
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ARMOR_GMG
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    allowInv: false
+  - type: STR_TANK_HROCKET
+    race: STR_TANK_HROCKET
+    stats:
+      tu: 70
+      stamina: 100
+      health: 100
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ARMOR_HROCKET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    # allowInv: false
+  - type: STR_TANK_LROCKET
+    race: STR_TANK_LROCKET
+    stats:
+      tu: 70
+      stamina: 100
+      health: 100
+      bravery: 110
+      reactions: 0
+      firing: 100
+      throwing: 0
+      strength: 90
+      psiStrength: 100
+      psiSkill: 0
+      melee: 70
+    armor: TANK_ARMOR_LROCKET
+    standHeight: 16
+    kneelHeight: 16
+    value: 20
+    deathSound: 23
+    moveSound: 14
+    energyRecovery: 50
+    allowInv: false
+ufopaedia:
+  - id: STR_TANK_AGLAUNCHER
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_TANK_AGLAUNCHER_UFOPEDIA
+    weapon: STR_TANK_AGLAUNCHER
+  - id: STR_TANK_GMG
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_TANK_GMG_UFOPEDIA
+    weapon: STR_TANK_GMG
+  - id: STR_TANK_HROCKET
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_TANK_HROCKET_UFOPEDIA
+    weapon: STR_TANK_HROCKET
+  - id: STR_TANK_LROCKET
+    type_id: 3
+    section: STR_HEAVY_WEAPONS_PLATFORMS
+    text: STR_TANK_LROCKET_UFOPEDIA
+    weapon: STR_TANK_LROCKET
+# Ammo UFOpedia entries are temporarily disabled#
+# while I sort out the issues with the bigobs.
+  #- id: STR_HWP_GMG
+    #type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    #text: STR_HWP_GMG_UFOPEDIA
+  #- id: STR_HWP_AGLAUNCHER
+    #type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    #text: STR_HWP_AGLAUNCHER_UFOPEDIA
+  #- id: STR_HWP_HROCKET
+    #type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    #text: STR_HWP_HROCKET_UFOPEDIA
+  #- id: STR_HWP_LROCKET
+    #type_id: 4
+    #section: STR_WEAPONS_AND_EQUIPMENT
+    #text: STR_HWP_LROCKET_UFOPEDIA
+# Disabled Base Tanks
+  - id: STR_TANK_CANNON
+    section: STR_NOT_AVAILABLE
+  - id: STR_TANK_ROCKET_LAUNCHER
+    section: STR_NOT_AVAILABLE
+extraStrings:
+  - type: en-US
+    strings:
+      STR_TANK_AGLAUNCHER: Tank/40mm Burst Grenade Launcher (BGL)
+      STR_TANK_AGLAUNCHER_UFOPEDIA: Due to the size constraints on the troop transport, tracked unmanned combat was customized to the needs of the X-Com team. It is clad in composite AR-500 steel with silicon carbine laminated carbon fiber armor and armed with a belt-fed 40mm grenade launcher capable of burst fire, along with a 5.7x28mm submachine gun as an auxilliary weapon. The vehicle is remotely controlled by a gunner in the troop transport.
+      STR_TANK_GMG: Tank/Machine Gun
+      STR_TANK_GMG_UFOPEDIA: Due to the size constraints on the troop transport, tracked unmanned combat was customized to the needs of the X-Com team. It is clad in composite AR-500 steel with silicon carbine laminated carbon fiber armor and armed with a 7.62x51mm general purpose machine gun turret with a self load auxilliary 40mm grenade launcher. The vehicle is remotely controlled by a gunner in the troop transport.
+      STR_TANK_HROCKET: Tank/Heavy Rocket
+      STR_TANK_HROCKET_UFOPEDIA: Due to the size constraints on the troop transport, tracked unmanned combat was customized to the needs of the X-Com team. It is clad in composite AR-500 steel with silicon carbine laminated carbon fiber armor and armed armed with a self-loading rocket launcher firing heavy high explosive rockets, along with a 5.7x28mm submachine gun as an auxilliary weapon. The vehicle is remotely controlled by a gunner in the troop transport.
+      STR_TANK_LROCKET: Tank/Light Rocket
+      STR_TANK_LROCKET_UFOPEDIA: Due to the size constraints on the troop transport, tracked unmanned combat was customized to the needs of the X-Com team. It is clad in composite AR-500 steel with silicon carbine laminated carbon fiber armor and armed with a self-loading rocket launcher firing light HEAT rockets, along with a 5.56x45mm light machine gun as an auxilliary weapon. The vehicle is remotely controlled by a gunner in the troop transport.
+      AUX_TANK_GLAUNCHER: HWP 40mm Grenade Launcher
+      AUX_TANK_LMG: HWP Light Machine Gun
+      AUX_TANK_SMG: HWP SMG
+      # Ammo
+      STR_HWP_AGLAUNCHER: HWP BGL Tank Ammo (x48/x250)
+      #STR_HWP_AGLAUNCHER_UFOPEDIA: This ammo pack holds four dozen shells of 40mm high explosive grenades and 250 rounds of 5.7x28mm for the auxilliary SMG weapon.
+      STR_HWP_GMG: HWP Machine Gun Tank Ammo (x200/x32)
+      #STR_HWP_GMG_UFOPEDIA: This combination ammo bin has a belt of 200 rounds of 7.62x51mm AP rounds and 32 40mm High Explosive grenades.
+      STR_HWP_HROCKET: HWP Heavy Rocket Tank Ammo (x8/x250)
+      #STR_HWP_HROCKET_UFOPEDIA: Eight heavy high explosive rockets and 250 rounds of 5.7x28mm SMG ammo are contained in his ammo pack.
+      STR_HWP_LROCKET: HWP Light Rocket Tank Ammo (x16/x250)
+extraSprites:
+  - type: BIGOBS.PCK
+    files:
+      700: Resources/WolframLance/HWP/GLauncher/GLauncherHE.gif
+      701: Resources/WolframLance/HWP/GLauncher/GLauncherHEAmmo.gif
+      702: Resources/WolframLance/HWP/AGLauncher/AGLauncherHE.gif
+      703: Resources/WolframLance/HWP/AGLauncher/AGLauncherHEAmmo.gif
+      704: Resources/WolframLance/HWP/HRocket/HRocket.gif
+      705: Resources/WolframLance/HWP/HRocket/HRocketAmmo.gif
+      706: Resources/WolframLance/HWP/LRocket/LRocket.gif
+      707: Resources/WolframLance/HWP/LRocket/LRocketAmmo.gif
+      708: Resources/WolframLance/HWP/GMG/GMG.gif
+      709: Resources/WolframLance/HWP/GMG/GMGAmmo.gif
+      710: Resources/WolframLance/HWP/LMG/LMG.gif
+      711: Resources/WolframLance/HWP/LMG/LMGAmmo.gif
+      712: Resources/WolframLance/HWP/SMG/SMG.gif
+      713: Resources/WolframLance/HWP/SMG/SMGAmmo.gif
+extraSounds:
+  - type: BATTLE.CAT
+    files:
+      720: Resources/WolframLance/HWP/GMG/Sounds/fire.wav
+      721: Resources/WolframLance/HWP/GLauncher/Sounds/fire.wav
+      722: Resources/WolframLance/HWP/LMG/Sounds/fire.wav
+      723: Resources/WolframLance/HWP/SMG/Sounds/fire.wav

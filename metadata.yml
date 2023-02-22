@@ -1,0 +1,11 @@
+#
+# metadata.yaml for Equal Terms
+name: "Equal Terms Extended 2.5.010 Beta"
+description: "Equal Terms 2.5 mod. A mod built on the continuing work for 25 years. First started with changing the base human weapons to be at least tactically distinct and matching real world weaponry. Later evolved"
+version: "2.5.011b"
+versionDisplay: "2.5.011 Beta"
+author: "KingMob4313 & Ickschuss"
+description: "Reworked tier 0, 0.5, 1, 2 personal, craft and HWP weapons and gear."
+id: "Equal Terms Extended 2.5.010"
+master: xcom1
+reservedSpace: 3
