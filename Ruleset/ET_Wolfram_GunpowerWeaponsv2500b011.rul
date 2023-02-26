@@ -1,12 +1,12 @@
 ﻿ # Equal Terms: Wolfram Lance - Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
- # version 2.500b010 for OpenXcom Extended
+ # version 2.500b015 for OpenXcom Extended
  # This contains all the weapons and changes required to have all the new weapons from the Wolfram Lance
 items:
   - type: STR_STUN_ROD
-    size: 0.075
+    size: 0.01
     costBuy: 1260
     costSell: 945
-    weight: 4
+    weight: 1
     bigSprite: 26
     floorSprite: 26
     handSprite: 80
@@ -30,10 +30,10 @@ items:
     clipSize: -1
  # Conventional Melee
   - type: STR_COMBAT_KNIFE
-    size: 0.03
+    size: 0.015
     costBuy: 300
     costSell: 200
-    weight: 1
+    weight: 0
     bigSprite: 251 # 
     floorSprite: 267 # 
     handSprite: 275 # 
@@ -66,12 +66,12 @@ items:
     invWidth: 1
     invHeight: 2
     armor: 60
-    listOrder: 1501
+    listOrder: 1811
   - type: STR_STILETTO
-    size: 0.2
+    size: 0.0125
     costBuy: 350
     costSell: 225
-    weight: 1
+    weight: 0
     bigSprite: 252 # FIX THIS
     floorSprite: 268 # FIX THIS
     handSprite: 285 # FIX THIS
@@ -103,9 +103,9 @@ items:
     clipSize: -1
     invWidth: 1
     invHeight: 2
-    listOrder: 1502
+    listOrder: 1812
   - type: STR_MACHETE
-    size: 0.25
+    size: 0.15
     costBuy: 400
     costSell: 200
     weight: 2
@@ -140,9 +140,9 @@ items:
     clipSize: -1
     invWidth: 1
     invHeight: 3
-    listOrder: 1503
+    listOrder: 1813
   - type: STR_TOMAHAWK
-    size: 0.25
+    size: 0.125
     costBuy: 500
     costSell: 300
     weight: 2
@@ -177,9 +177,9 @@ items:
     clipSize: -1
     invWidth: 1
     invHeight: 3
-    listOrder: 1504
+    listOrder: 1814
   - type: STR_PICK
-    size: 0.2
+    size: 0.12
     costBuy: 300
     costSell: 150
     weight: 3
@@ -215,9 +215,9 @@ items:
     clipSize: -1
     invWidth: 1
     invHeight: 3
-    listOrder: 1505
+    listOrder: 1815
   - type: STR_SWORD
-    size: 0.3
+    size: 0.225
     costBuy: 800
     costSell: 600
     weight: 3
@@ -252,9 +252,9 @@ items:
     invWidth: 2
     invHeight: 3
     twoHanded: true
-    listOrder: 1506
+    listOrder: 1816
   - type: STR_SLEDGE
-    size: 0.3
+    size: 0.25
     costBuy: 200
     costSell: 60
     weight: 5
@@ -290,12 +290,12 @@ items:
     invWidth: 2
     invHeight: 3
     twoHanded: true
-    listOrder: 1507
+    listOrder: 1817
   - type: STR_SHOVELAXE
-    size: 0.3
+    size: 0.2
     costBuy: 500
     costSell: 250
-    weight: 4
+    weight: 3
     bigSprite: 258 # FIX THIS
     floorSprite: 274 # FIX THIS
     handSprite: 345 # FIX THIS
@@ -325,12 +325,12 @@ items:
     invWidth: 2
     invHeight: 3
     twoHanded: true
-    listOrder: 1507
+    listOrder: 1818
  # Alloy Melee
   - type: STR_ALLOY_COMBAT_KNIFE
-    size: 0.2
+    size: 0.015
     costSell: 600
-    weight: 1
+    weight: 0
     bigSprite: 259 # 
     floorSprite: 267 # 
     handSprite: 275 # 
@@ -365,11 +365,11 @@ items:
     armor: 60
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1508
+    listOrder: 1821
   - type: STR_ALLOY_STILETTO
-    size: 0.2
+    size: 0.0125
     costSell: 800
-    weight: 1
+    weight: 0
     bigSprite: 260 # FIX THIS
     floorSprite: 268 # FIX THIS
     handSprite: 285 # FIX THIS
@@ -403,11 +403,11 @@ items:
     invHeight: 2
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1509
+    listOrder: 1822
   - type: STR_ALLOY_MACHETE
-    size: 0.25
+    size: 0.15
     costSell: 600
-    weight: 2
+    weight: 1
     bigSprite: 261 # FIX THIS
     floorSprite: 269 # FIX THIS
     handSprite: 295 # FIX THIS
@@ -441,11 +441,11 @@ items:
     invHeight: 3
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1510
+    listOrder: 1823
   - type: STR_ALLOY_TOMAHAWK
-    size: 0.25
+    size: 0.125
     costSell: 1000
-    weight: 2
+    weight: 1
     bigSprite: 262 # FIX THIS
     floorSprite: 270 # FIX THIS
     handSprite: 305 # FIX THIS
@@ -479,11 +479,11 @@ items:
     invHeight: 3
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1511
+    listOrder: 1824
   - type: STR_ALLOY_PICK
-    size: 0.2
+    size: 0.12
     costSell: 500
-    weight: 3
+    weight: 2
     bigSprite: 263 # FIX THIS
     floorSprite: 271 # FIX THIS
     handSprite: 315 # FIX THIS
@@ -518,11 +518,11 @@ items:
     invHeight: 3
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1512
+    listOrder: 1825
   - type: STR_ALLOY_SWORD
-    size: 0.3
+    size: 0.225
     costSell: 2000
-    weight: 3
+    weight: 2
     bigSprite: 264 # FIX THIS
     floorSprite: 272 # FIX THIS
     handSprite: 325 # FIX THIS
@@ -556,11 +556,11 @@ items:
     twoHanded: true
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1513
+    listOrder: 1826
   - type: STR_ALLOY_SLEDGE
-    size: 0.3
+    size: 0.25
     costSell: 200
-    weight: 5
+    weight: 4
     bigSprite: 265 # FIX THIS
     floorSprite: 273 # FIX THIS
     handSprite: 335 # FIX THIS
@@ -595,11 +595,11 @@ items:
     twoHanded: true
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1514
+    listOrder: 1827
   - type: STR_ALLOY_SHOVELAXE
-    size: 0.3
+    size: 0.2
     costSell: 750
-    weight: 4
+    weight: 2
     bigSprite: 266 # FIX THIS
     floorSprite: 274 # FIX THIS
     handSprite: 345 # FIX THIS
@@ -631,7 +631,7 @@ items:
     twoHanded: true
     requires:
       - STR_ALLOY_MELEE
-    listOrder: 1515
+    listOrder: 1828
     # End Melee
   - type: STR_MEDI_KIT
     size: 0.1
@@ -679,7 +679,7 @@ items:
     armor: 12
     invWidth: 1
     invHeight: 2
-    listOrder: 2000
+    listOrder: 2001
   - type: STR_FIVE_SEVEN_PDW_CLIP # FIXED
     size: 0.025
     costBuy: 70
@@ -704,7 +704,7 @@ items:
     tuLoad: 10
     tuUnload: 8
     # New Ammo Stats END
-    listOrder: 2001
+    listOrder: 2002
   - type: STR_IMP_FIVE_SEVEN_PDW_CLIP # FIXED
     size: 0.025
     costSell: 125
@@ -730,7 +730,7 @@ items:
     tuLoad: 10
     tuUnload: 8
     # New Ammo Stats END
-    listOrder: 2002
+    listOrder: 2003
   - type: STR_MAGNUM
     size: 0.2
     costBuy: 2200
@@ -769,7 +769,7 @@ items:
     minRange: 1
     dropoff: 4
     armor: 18
-    listOrder: 2025
+    listOrder: 2004
   - type: STR_MAGNUM_AMMO
     size: 0.02
     costBuy: 150
@@ -794,7 +794,7 @@ items:
     tuLoad: 20
     tuUnload: 12
     # New Ammo Stats END
-    listOrder: 2026
+    listOrder: 2005
   - type: STR_IMP_MAGNUM_AMMO
     size: 0.02
     costSell: 250
@@ -820,7 +820,7 @@ items:
     tuLoad: 20
     tuUnload: 12
     # New Ammo Stats END
-    listOrder: 2027
+    listOrder: 2006
   - type: STR_SMG
     size: 0.2
     costBuy: 2000
@@ -867,7 +867,7 @@ items:
     dropoff: 3
     autoShots: 5
     armor: 18
-    listOrder: 2100
+    listOrder: 2007
   - type: STR_SMG_CLIP
     size: 0.1
     costBuy: 100
@@ -892,7 +892,7 @@ items:
       ToArmorPre: 0.0
       ToStun: 0.25
     # New Ammo Stats END
-    listOrder: 2101
+    listOrder: 2008
   - type: STR_IMP_SMG_CLIP
     size: 0.1
     costSell: 150
@@ -918,7 +918,7 @@ items:
       ToArmorPre: 0.0
       ToStun: 0.25
     # New Ammo Stats END
-    listOrder: 2102
+    listOrder: 2009
   - type: STR_SHOTGUN # Now has faux items for Ufopedia
     size: 0.2
     costBuy: 2000
@@ -963,7 +963,7 @@ items:
     tuAimed: 42
     invWidth: 1
     invHeight: 2 # Same size as SMG
-    listOrder: 2125
+    listOrder: 2010
   - type: STR_SHOTGUN_FAUXONE # Ufopedia
     bigSprite: 409
     battleType: 1
@@ -985,6 +985,7 @@ items:
     invWidth: 1
     invHeight: 2
     recover: false
+    listOrder: 2011
   - type: STR_SHOTGUN_FAUXTWO # Ufopedia
     bigSprite: 409
     battleType: 1
@@ -1008,6 +1009,7 @@ items:
     requires:
       - STR_ALLOY_MANUFACTURING
     recover: false
+    listOrder: 2014
   - type: STR_SHOTGUN_SHELLS
     size: 0.1
     costBuy: 200
@@ -1035,7 +1037,7 @@ items:
     tuUnload: 15
     shotgunBehavior: 1
     # New Ammo Stats END
-    listOrder: 2126
+    listOrder: 2012
   - type: STR_SHOTGUN_SLUGS # Needs UFOPEDIA?
     size: 0.1
     costBuy: 200
@@ -1058,7 +1060,7 @@ items:
       ToArmor: 0.20
       ToStun: 0.40
     # New Ammo Stats END
-    listOrder: 2127
+    listOrder: 2013
   - type: STR_ALLOY_SHOTGUN_SHELLS  
     size: 0.1
     costSell: 400
@@ -1085,7 +1087,7 @@ items:
       ToStun: 0.25
     shotgunBehavior: 1
     # New Ammo Stats END
-    listOrder: 2128
+    listOrder: 2015
   - type: STR_ALLOY_SHOTGUN_SLUGS # Needs UFOPEDIA?
     size: 0.1
     costSell: 400
@@ -1107,7 +1109,7 @@ items:
       ToArmor: 0.20
       ToStun: 0.40
     # New Ammo Stats END
-    listOrder: 2129
+    listOrder: 2016
   - type: STR_ASSAULT_RIFLE
     size: 0.2
     costBuy: 3000
@@ -1150,7 +1152,7 @@ items:
     dropoff: 3
     autoShots: 5
     armor: 24
-    listOrder: 2200
+    listOrder: 2201
   - type: STR_ASSAULT_RIFLE_CLIP
     size: 0.1
     costBuy: 200
@@ -1174,7 +1176,7 @@ items:
       ToArmor: 0.10
       ToStun: 0.20
     # New Ammo Stats END
-    listOrder: 2201
+    listOrder: 2202
   - type: STR_IMP_ASSAULT_RIFLE_CLIP
     size: 0.1
     costSell: 300
@@ -1200,7 +1202,7 @@ items:
       ToArmor: 0.10
       ToStun: 0.20
     # New Ammo Stats END
-    listOrder: 2202
+    listOrder: 2203
   - type: STR_MARKSMANS_RIFLE
     size: 0.3
     costBuy: 4000
@@ -1239,7 +1241,7 @@ items:
     snapRange: 35
     minRange: 4
     dropoff: 2
-    listOrder: 2300
+    listOrder: 2204
   - type: STR_MARKSMANS_RIFLE_CLIP
     size: 0.1
     costBuy: 250
@@ -1266,7 +1268,7 @@ items:
     tuLoad: 18
     tuUnload: 8
     # New Ammo Stats END
-    listOrder: 2301
+    listOrder: 2205
   - type: STR_IMP_MARKSMANS_RIFLE_CLIP
     size: 0.1
     costSell: 400
@@ -1294,7 +1296,7 @@ items:
     tuLoad: 18
     tuUnload: 8
     # New Ammo Stats END
-    listOrder: 2302
+    listOrder: 2206
   - type: STR_COMBAT_SHOTGUN # Now has faux items for Ufopedia
     size: 0.4
     costBuy: 8000
@@ -1343,7 +1345,7 @@ items:
     dropoff: 4
     invWidth: 2
     invHeight: 3
-    listOrder: 2250
+    listOrder: 2207
   - type: STR_COMBAT_SHOTGUN_FAUXONE # Ufopedia
     bigSprite: 840 # FIXED
     battleType: 1
@@ -1375,6 +1377,7 @@ items:
     invWidth: 2
     invHeight: 3
     recover: false
+    listOrder: 2208
   - type: STR_COMBAT_SHOTGUN_FAUXTWO # Ufopedia
     bigSprite: 840 # FIXED
     battleType: 1
@@ -1408,6 +1411,7 @@ items:
     invWidth: 2
     invHeight: 3
     recover: false
+    listOrder: 2211
   - type: STR_COMBAT_SHOTGUN_SHELL_MAG
     size: 0.3
     costBuy: 350
@@ -1438,7 +1442,7 @@ items:
     tuUnload: 10
     invWidth: 1
     invHeight: 2
-    listOrder: 2251
+    listOrder: 2209
   - type: STR_COMBAT_SHOTGUN_SLUG_MAG # Needs UFOPEDIA?
     size: 0.3
     costBuy: 350
@@ -1465,7 +1469,7 @@ items:
     tuUnload: 10
     invWidth: 1
     invHeight: 2
-    listOrder: 2252
+    listOrder: 2210
   - type: STR_COMBAT_SHOTGUN_ALLOY_SHELL_MAG
     size: 0.3
     costSell: 500
@@ -1495,7 +1499,7 @@ items:
     tuUnload: 10
     invWidth: 1
     invHeight: 2
-    listOrder: 2253
+    listOrder: 2212
   - type: STR_COMBAT_SHOTGUN_ALLOY_SLUG_MAG # Needs UFOPEDIA?
     size: 0.3
     costSell: 500
@@ -1523,7 +1527,7 @@ items:
     tuUnload: 10
     invWidth: 1
     invHeight: 2
-    listOrder: 2254
+    listOrder: 2213
   - type: STR_SNIPER_RIFLE
     size: 0.3
     costBuy: 6400
@@ -1557,7 +1561,7 @@ items:
       firing: [0.3000, 0.0100, 0.0000]
       flatHundred: 0.0325
     # New Weapon Stats END
-    listOrder: 2400
+    listOrder: 2601
   - type: STR_SNIPER_RIFLE_AMMO
     size: 0.1
     costBuy: 350
@@ -1584,7 +1588,7 @@ items:
     tuLoad: 20
     tuUnload: 10
     # New Ammo Stats END
-    listOrder: 2401
+    listOrder: 2602
   - type: STR_IMP_SNIPER_RIFLE_AMMO
     size: 0.1
     costSell: 500
@@ -1612,7 +1616,7 @@ items:
     tuLoad: 20
     tuUnload: 10
     # New Ammo Stats END
-    listOrder: 2402
+    listOrder: 2603
   - type: STR_SAW
     size: 0.3
     costBuy: 13500
