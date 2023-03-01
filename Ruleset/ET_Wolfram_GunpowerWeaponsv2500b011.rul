@@ -1658,12 +1658,12 @@ items:
     autoShots: 7
     invWidth: 2
     invHeight: 3
-    listOrder: 2500
+    listOrder: 3001
   - type: STR_SAW_FAUXONE # Ufopedia
     bigSprite: 420
     battleType: 1
     weight: 10
-    compatibleAmmo:
+    compatibleAmmo:   
       - STR_SAW_AP_AMMO
       - STR_SAW_AP_CLIP
     accuracyAuto: 35
@@ -1677,6 +1677,7 @@ items:
     invWidth: 2
     invHeight: 3
     recover: false
+    listOrder: 3002
   - type: STR_SAW_FAUXTWO # Ufopedia
     bigSprite: 420
     battleType: 1
@@ -1697,6 +1698,7 @@ items:
     requires:
       - STR_ALLOY_MANUFACTURING
     recover: false
+    listOrder: 3005
   - type: STR_SAW_AP_AMMO
     size: 0.2
     costBuy: 500
@@ -1721,9 +1723,9 @@ items:
       ToArmor: 0.10
       ToStun: 0.20
     tuLoad: 25
-    tuUnload: 12
+    tuUnload: 12  
     # New Ammo Stats END
-    listOrder: 2501
+    listOrder: 3003
   - type: STR_SAW_AP_CLIP # Needs UFOPEDIA?
     size: 0.1
     costBuy: 250
@@ -1750,7 +1752,7 @@ items:
     tuLoad: 18
     tuUnload: 8
     # New Ammo Stats END
-    listOrder: 2502
+    listOrder: 3004
   - type: STR_IMP_SAW_AP_AMMO
     size: 0.2
     costSell: 800
@@ -1778,7 +1780,7 @@ items:
     tuLoad: 25
     tuUnload: 12
     # New Ammo Stats END
-    listOrder: 2503
+    listOrder: 3006
   - type: STR_IMP_SAW_AP_CLIP # Needs UFOPEDIA?
     size: 0.2
     costSell: 400
@@ -1806,7 +1808,7 @@ items:
     tuLoad: 18
     tuUnload: 8
     # New Ammo Stats END
-    listOrder: 2504
+    listOrder: 3007
   - type: STR_MGL # WILL NEED 2 + 2 UFOPEDIA Entries
     size: 0.4
     costBuy: 3000
