@@ -1,6 +1,6 @@
---= 313 Equal Terms 2.0 Modification for Open-X-Com Extended =--
+--= 313 Equal Terms 2.5 Modification for Open-X-Com Extended =--
 By KingMob4313 and Ickschuss. Created for X-Com: Ufo Defense May 2000.
-Last updated March 2020.
+Last updated Aug 2023.
 
 BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
 BETA BETA BETA BETA BETA Version 2.5.100 BETA BETA BETA BETA BETA BETA 
@@ -33,22 +33,24 @@ The tier-list
 0.5: Alloy
 1: Laser
 2: Plasma
-3: In next DLC
+3: In next "DLC" version 3.0
 
 Version 2.5EX.100
 --== Current ==--
 First version for OpenXcom Extended
 All weapons rebalanced, adding different capabilities vs armor, damage drop, accuracy calculations and minor damage adjustments
-All weapons have modified reload times to account for weapon type
-Adjusted SAW ammo box to 50 rounds to 100 and added 50 round casket magazine for tier 0 & 0.5
+  - High skill weapons like the DMR and Sniper class weapons are highly inaccurate in the hands of low AIM skill soldiers
+  - Low skill weapons like the SMG and Shotgun class weapons take into account soldier AIM skill less than other weapons
+All weapons have modified reload times to account for weapon type and ammunition type
+Added Combat Shotgun for all tiers at suggestion of stream viewers
 Added Shotgun slugs for tier 0 & 0.5
 Added Stun Baton round for MGL
-Added Melee weapons at suggestion of stream viewers
-
+Added full melee weapon sets at suggestion of stream viewers
+Adjusted SAW ammo box to 50 rounds to 100 & added 50 round casket magazine for tier 0 & 0.5
 Fixed Light/Small Rocket to be general purpose (design confusion)
 
+== Previous 2.0 Version Work ==
 Version 2.0.045 (Bug fixes - continuous roll up versions)
---== Current ==--
 Moved out Hyperwave Encoder/Decoder compatibility code for the Terrain Pack mod from misc file to optional file
 Corrected typo in Improved Grenade floor object
 Fixed miss attributed grenade floor object.
@@ -68,3 +70,10 @@ Flipped BigOb for SMG tier to provide visual cues that it is a one handed weapon
 (Re)-Set up map file reference UBASEREDUX_00 to have HYPER WAVE ENCODER/DECODER
 Fixed HWP Issues - Thanks SupSuper, ohartenstein23 and Meridian for the help.
 Improved HWP GMG sound
+
+Future Changes:
+Version 3.0 
+Aliens Only Particle Weapons
+  - Particle Weapons inflict less damage than plasma, but ignore a large portion of armor
+Removing Psi-amp and adding a technology hacking device
+  - hacking device can force panic fire, empty magazines, explode any alien grenades in inventory, open alien doors, explode consoles & power units, stun and/or control mechanical enemies 

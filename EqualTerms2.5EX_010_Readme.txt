@@ -1,9 +1,9 @@
 --= 313 Equal Terms 2.0 Modification for Open-X-Com Extended =--
 By KingMob4313 and Ickschuss. Created for X-Com: Ufo Defense May 2000.
-Last updated March 2023.
+Last updated March 2020.
 
 BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
-BETA BETA BETA BETA BETA Version 2.5.015 BETA BETA BETA BETA BETA BETA 
+BETA BETA BETA BETA BETA Version 2.5.010 BETA BETA BETA BETA BETA BETA 
 BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA 
 
 
@@ -33,17 +33,11 @@ The tier-list
 0.5: Alloy
 1: Laser
 2: Plasma
-3: In next "DLC"
+3: In next DLC
+
 
 Version 2.5EX.010 (Beta)
 --== Current ==--
-Fixed Weights and sizes of all weapons
-Increased storage facility values and added storage to other ancillary facilities (living quarters, hangar)
-Adjusted volumns of reloads
-Changed stun grenades to use melee weapon hit sound
-Misc bug fixes (damage, listorders, image links)
-
-Version 2.5EX.010 (Beta)
 First version for OpenXcom Extended
 All weapons rebalanced, adding different capabilities vs armor, damage drop, accuracy calculations and minor damage adjustments
 All weapons have modified reload times to account for weapon type
