@@ -11,11 +11,11 @@ BETA BETA BETA BETA BETA BETA BETA  BETA BETA BETA BETA BETA BETA BETA
 --= Mod Details: 
 
 There are now four rulesets included in each package: 
-1-3) Three for the main mods, containing modded info for all three tiers 
-  4) A miscellaneous ruleset 
-    a) this contains small changes to related to the mod 
-    b) adjusts the accuracy of aliens to make up for the changed accuracies of plasma weapons
-      c) adds an item to the alien base map
+ - Three for the main mods, containing modded info for all three tiers
+ - A miscellaneous ruleset 
+   - this contains small changes to related to the mod 
+   - adjusts the accuracy of aliens to make up for the changed accuracies of plasma weapons
+   - adds an item to the alien base map
     
 Wolfram Lance: 
  - New purchasable conventional armor
