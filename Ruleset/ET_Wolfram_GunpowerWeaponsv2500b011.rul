@@ -857,7 +857,6 @@ items:
     powerRangeReduction: 1
     # New Weapon Stats END
     battleType: 1
-    twoHanded: false
     invWidth: 1
     invHeight: 2
     maxRange: 125
@@ -1035,7 +1034,6 @@ items:
       ToStun: 0.25
     tuLoad: 25
     tuUnload: 15
-    shotgunBehavior: 1
     # New Ammo Stats END
     listOrder: 2012
   - type: STR_SHOTGUN_SLUGS # Needs UFOPEDIA?
@@ -1085,7 +1083,6 @@ items:
       ArmorEffectiveness: 1.4
       ToArmorPre: 0.0
       ToStun: 0.25
-    shotgunBehavior: 1
     # New Ammo Stats END
     listOrder: 2015
   - type: STR_ALLOY_SHOTGUN_SLUGS # Needs UFOPEDIA?
@@ -1438,8 +1435,6 @@ items:
     shotgunBehavior: 1
     shotgunSpread: 66
     # New Ammo Stats END
-    tuLoad: 20
-    tuUnload: 10
     invWidth: 1
     invHeight: 2
     listOrder: 2209

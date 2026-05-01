@@ -144,7 +144,6 @@ items:
     snapRange: 25
     autoRange: 30
     minRange: 3
-    clipSize: 250
     battleType: 1
     fixedWeapon: true
     invWidth: 2
@@ -168,7 +167,6 @@ items:
     autoRange: 40
     minRange: 4
     battleType: 1
-    clipSize: 250
     fixedWeapon: true
     invWidth: 2
     invHeight: 3
@@ -192,7 +190,6 @@ items:
     aimRange: 100
     snapRange: 35
     minRange: 7
-    clipSize: 32
     battleType: 1
     fixedWeapon: true
     arcingShot: true

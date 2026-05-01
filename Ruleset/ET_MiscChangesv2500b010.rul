@@ -1,6 +1,14 @@
 ﻿# Equal Terms: MiscChanges - Based on the original Equal Terms mod created for X-com in 2000 by Ickschuss & Shortstop4313
 # version 2.500b010 for OpenXcom Extended
 # This is the miscellaneous changes for the Equal Terms Mods.
+startingTime:
+  second: 0
+  minute: 0
+  hour: 12
+  weekday: 4
+  day: 1
+  month: 1
+  year: 2020
 items:
   - type: STR_SECTOID_CORPSE
     costSell: 15000
@@ -12,15 +20,6 @@ items:
     costSell: 50000
   - type: STR_SECTOPOD_CORPSE
     costSell: 65000
-startingTime:
-  second: 0
-  minute: 0
-  hour: 12
-  weekday: 4
-  day: 1
-  month: 1
-  year: 2020
-items:
   - type: STR_ELECTRO_FLARE
     size: 0.1
     costBuy: 60
